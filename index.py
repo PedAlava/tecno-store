@@ -11,14 +11,18 @@ import Skynet
 
 app = Flask(__name__)
 
+@app.route('/index')
+def ini():
+	title = "Tecnologic Store Ups"
+	return render_template('tecno.html',title=title)
 @app.route('/')
 def index():
 	title = "Tecnologic Store Ups"
 	return render_template('tecno.html',title=title)
 
-@app.route('/inicio')
-def inicio():
-	title = "Tecnologic Store Ups"
+@app.route('/dialog')
+def dialog():
+	title = "Asistente Dialogflow"
 	return render_template('asistDialog.html',title=title)
 
 @app.route('/mains')
