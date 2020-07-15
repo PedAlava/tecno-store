@@ -93,7 +93,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="#" class="logo">
+								<a href="{{ url_for('index') }}" class="logo">
 									<img width="100px" height="100px" src="{{ url_for('static', filename='images/log.png') }}" alt="">
 								</a>
 							</div>
@@ -200,12 +200,13 @@
                 <div id="responsive-nav">
                     <!-- NAV -->
                     <ul class="main-nav nav navbar-nav">
-                        <li class="active"><a href="#">Inicio</a></li>
+                        <li class="active"><a href="{{ url_for('index') }}">Inicio</a></li>
                         <li><a href="{{ url_for('store') }}">Las mejores ofertas</a></li>
                         <li><a href="{{ url_for('laps') }}">Laptops</a></li>
                         <li><a href="{{ url_for('cells') }}">Telefonos Inteligentes</a></li>
                         <li><a href="{{ url_for('novs') }}">Productos novedosos</a></li>
                         <li><a href="{{ url_for('asist') }}">Asistente</a></li>
+			<li><a href="{{ url_for('dialog') }}">Asistente Dialogflow</a></li>
                     </ul>
                     <!-- /NAV -->
                 </div>
@@ -240,11 +241,10 @@
 							<div class="footer">
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
-									<li><a href="#">Hot deals</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Smartphones</a></li>
-									<li><a href="#">Cameras</a></li>
-									<li><a href="#">Accessories</a></li>
+									<li><a href="{{ url_for('store') }}">Las mejores ofertas</a></li>
+                        						<li><a href="{{ url_for('laps') }}">Laptops</a></li>
+                        						<li><a href="{{ url_for('cells') }}">Telefonos Inteligentes</a></li>
+                        						<li><a href="{{ url_for('novs') }}">Productos novedosos</a></li>
 								</ul>
 							</div>
 						</div>
@@ -260,6 +260,8 @@
 									<li><a href="#">Privacy Policy</a></li>
 									<li><a href="#">Orders and Returns</a></li>
 									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="{{ url_for('asist') }}">Asistente</a></li>
+									<li><a href="{{ url_for('dialog') }}">Asistente Dialogflow</a></li>
 								</ul>
 							</div>
 						</div>
@@ -273,6 +275,8 @@
 									<li><a href="#">Wishlist</a></li>
 									<li><a href="#">Track My Order</a></li>
 									<li><a href="#">Help</a></li>
+									<li><a href="{{ url_for('asist') }}">Asistente</a></li>
+									<li><a href="{{ url_for('dialog') }}">Asistente Dialogflow</a></li>
 								</ul>
 							</div>
 						</div>
