@@ -16,12 +16,18 @@ def index():
 	title = "Tecnologic Store Ups"
 	return render_template('tecno.html',title=title)
 
+@app.route('/inicio')
+def inicio():
+	title = "Tecnologic Store Ups"
+	return render_template('asistDialog.html',title=title)
+
 @app.route('/mains')
 def mains():
 	return render_template('inicio.html')
 @app.route('/main')	
 def main():
-	return render_template('dashboard.html')
+	title = "Tecnologic Store Ups"
+	return render_template('tecno.html',title=title)
 
 @app.route('/cell')	
 def cell():
