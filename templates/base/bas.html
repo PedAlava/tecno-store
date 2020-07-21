@@ -205,8 +205,8 @@
                         <li><a href="{{ url_for('laps') }}">Laptops</a></li>
                         <li><a href="{{ url_for('cells') }}">Telefonos Inteligentes</a></li>
                         <li><a href="{{ url_for('novs') }}">Productos novedosos</a></li>
-                        <li><a href="{{ url_for('asist') }}">Asistente</a></li>
-			<li><a href="{{ url_for('dialog') }}">Asistente Dialogflow</a></li>
+                        <!--<li><a href="{{ url_for('asist') }}">Asistente</a></li>-->
+			<!--<li><a href="{{ url_for('dialog') }}">Asistente Dialogflow</a></li>-->
                     </ul>
                     <!-- /NAV -->
                 </div>
@@ -217,6 +217,14 @@
         <!-- /NAVIGATION -->
         {% block content %}
         {% endblock %}
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger
+  		intent="WELCOME"
+ 		chat-title="asistente12"
+  		agent-id="121d1160-c321-40f9-af12-a0f67d501fd8"
+  		language-code="es">
+	</df-messenger>
+
     	<!-- FOOTER -->
 		<footer id="footer">
 			<!-- top footer -->
