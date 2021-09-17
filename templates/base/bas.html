@@ -227,14 +227,26 @@
         <!-- /NAVIGATION -->
         {% block content %}
         {% endblock %}
+		<!--
 	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 	<df-messenger
   		intent="WELCOME"
  		chat-title="Asistente"
   		agent-id="121d1160-c321-40f9-af12-a0f67d501fd8"
   		language-code="es">
-	</df-messenger>
-
+	</df-messenger>-->
+	<script type="text/javascript">
+	  (function(w, d, x, id){
+	    s=d.createElement('script');
+	    s.src='https://dend6g4sigg57.cloudfront.net/amazon-connect-chat-interface-client.js';
+	    s.async=1;
+	    s.id=id;
+	    d.getElementsByTagName('head')[0].appendChild(s);
+	    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+	  })(window, document, 'amazon_connect', '4e07c88a-88d4-4831-b255-c7f7d2c894da');
+	  amazon_connect('styles', { openChat: { color: 'white', backgroundColor: '#123456'}, closeChat: { color: 'white', backgroundColor: '#123456'} });
+	  amazon_connect('snippetId', 'QVFJREFIZ25JVzc0R0xQTVpWSlI0RjdyVlBselRRYnQzeW5TZEVnWGFmQnNNZ0lXbmdIdGRWc0ZEbGRGQnFIMXkvMkVTbC9GQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNaEFIVlIyVW9IVjNEdXB2UEFnRVFnQ3Z3N1Z1MThJR2RoS0o4RUg0K0NvdXprRWJrN3lCM3dFeUx5NEF0d1Y4NStHMjlGUkhIVjVuWms5cEE6OkcxUDhDd3l0T2JHY0N3RkFNVi91V0QrZkx5aE1tL2hqVCtHZFpmeDQrNXJUNGNySXcyVVdsNGJ2aHNNUjdFNjRFUGcxaUVGcEVqOVR6TXd4Wk1OeUtOMk9nN2tlM21ERmEzQVRPZ0ZZVjB3QzVwU2lpaFkwQXRrNUVxb043Y3RXdmJqanptRUsySzhvSGdtNlNwR2VZQ29IcXZwN2Z6cz0=');
+	</script>
     	<!-- FOOTER -->
 		<footer id="footer">
 			<!-- top footer -->
